@@ -8,7 +8,14 @@ export default {
   },
   midwayLogger: {
     default: {
-      dir: '/home/logs',
+      transports: {
+        file: {
+          dir: '/home/admin/logs',
+        },
+        error: {
+          dir: '/home/admin/logs',
+        },
+      },
     },
   },
 } as MidwayConfig;
