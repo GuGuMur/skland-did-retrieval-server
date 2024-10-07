@@ -1,8 +1,8 @@
 import { Controller, Get } from '@midwayjs/core';
 import { getDeviceId } from '../utils/getDeviceId.js';
 
-declare var module: any;
-declare var global: any;
+declare let module: any;
+declare let global: any;
 
 @Controller('/')
 export class HomeController {

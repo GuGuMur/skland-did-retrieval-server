@@ -23,6 +23,9 @@ importers:
       '@midwayjs/logger':
         specifier: ^3.1.0
         version: 3.4.2
+      '@midwayjs/serverless-vercel-starter':
+        specifier: ^3.4.3
+        version: 3.4.3
       '@midwayjs/validate':
         specifier: ^3.12.0
         version: 3.18.0
@@ -413,6 +416,18 @@ packages:
 
   '@midwayjs/mock@3.18.0':
     resolution: {integrity: sha512-50lbph1H/QZUROoo37CQB6q9UpkXh6rjR0nZg23wuQBcKeghI6CARgPN5fkwfwIs6QQeMa/DY9krMHYWTxRUqw==}
+    engines: {node: '>=12'}
+
+  '@midwayjs/runtime-engine@3.4.4':
+    resolution: {integrity: sha512-Nxr7p+u+EL5xs/IQRLqka/WwQLlAUuiL4M3CHNcaq7XEkOGaFF/4CAJ1FMmNutxhVsh0cV1oAzayehVCGj1ZSA==}
+    engines: {node: '>=12'}
+
+  '@midwayjs/serverless-http-parser@3.14.0':
+    resolution: {integrity: sha512-/QcB8txFWn7Y+nykgWbTba2WYFBvAph1c9TUsDNxnaCAhRxK+zlgwYvTrW/8iDHbCggPc9Zfw6jEEhm1u0ew3g==}
+    engines: {node: '>=12'}
+
+  '@midwayjs/serverless-vercel-starter@3.4.3':
+    resolution: {integrity: sha512-YiSDjQ/hIWsxBtMAByCdh7bNimcHhlgJLjicH/AU33rjbZBMX6e5M+ANy/pmdZnaAzxT6TWyauWJueHq57ZmwA==}
     engines: {node: '>=12'}
 
   '@midwayjs/session@3.18.0':
@@ -3228,6 +3243,28 @@ snapshots:
       supertest: 6.3.3
     transitivePeerDependencies:
       - supports-color
+
+  '@midwayjs/runtime-engine@3.4.4': {}
+
+  '@midwayjs/serverless-http-parser@3.14.0':
+    dependencies:
+      '@midwayjs/cookies': 1.2.0
+      accepts: 1.3.8
+      cache-content-type: 1.0.1
+      encodeurl: 1.0.2
+      escape-html: 1.0.3
+      http-errors: 2.0.0
+      only: 0.0.2
+      parseurl: 1.3.3
+      statuses: 2.0.1
+      type-is: 1.6.18
+      vary: 1.1.2
+
+  '@midwayjs/serverless-vercel-starter@3.4.3':
+    dependencies:
+      '@midwayjs/runtime-engine': 3.4.4
+      '@midwayjs/serverless-http-parser': 3.14.0
+      parseurl: 1.3.3
 
   '@midwayjs/session@3.18.0':
     dependencies:

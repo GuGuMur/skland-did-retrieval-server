@@ -6,4 +6,9 @@ export default {
   koa: {
     port: 7001,
   },
+  midwayLogger: {
+    default: {
+      dir: '/home/logs',
+    },
+  },
 } as MidwayConfig;
